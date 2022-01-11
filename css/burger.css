@@ -1,0 +1,57 @@
+.openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+.fa-bars , .fa-times {
+    height: 40px;
+}
+.openMenu {
+    float: right;
+    font-size: 2rem;
+    margin: 2px 5px;
+    display: none;
+    cursor: pointer;
+}
+.menu .closeMenu {
+    margin: 30px auto;
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+.closeMenu {
+    float: right;
+    font-size: 2rem;
+    margin: 2px 5px;
+    display: none;
+    cursor: pointer;
+}
+@media(max-width: 769px) {
+    .menu {
+        color: #fff;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        opacity: 0.8;
+        transition: top 1s ease;
+        display: none;
+    }
+   .menu .closeMenu {
+        display: block;
+        position: absolute;
+        margin: 30px auto;
+        transition: top 1s ease;
+    }
+    .openMenu {
+        transition: top 1s ease;
+        display: block;
+    }
+}
